@@ -6,8 +6,10 @@ payload = {
     "page":2,
     "limit":30,
     "isCategoryHeadline":1,
-    "startAt":1752644653,
-    "endAt":1753508653
+    # "startAt":1752644653,
+    "startAt":int(dt.datetime.today() - dt.timedelta(days = 11).timestamp()),
+    # "endAt":1753508653
+    "endAt":int(dt.datetime.today().timestamp())
 } #參數
 res = requests.get(url, params = payload) #連線鉅亨網
 jd = json.loads(res.text) #解析JSON轉成dict

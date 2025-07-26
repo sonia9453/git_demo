@@ -8,7 +8,7 @@ payload = {
     "limit":30,
     "isCategoryHeadline":1,
     # "startAt":1752644653,
-    "startAt":int(dt.datetime.today() - dt.timedelta(days = 11).timestamp()),
+    "startAt": int((dt.datetime.today() - dt.timedelta(days=11)).timestamp()),
     # "endAt":1753508653
     "endAt":int(dt.datetime.today().timestamp())
 } #參數
